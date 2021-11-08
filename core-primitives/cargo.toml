@@ -1,0 +1,22 @@
+[package]
+authors = ['PureStake']
+edition = '2018'
+homepage = 'https://substrate.dev'
+license = 'Unlicense'
+name = 'yoda-core-primitives'
+repository = 'https://github.com/substrate-developer-hub/substrate-node-template/'
+version = '3.0.0'
+
+[dependencies]
+sp-core = {default-features = false, version = '3.0.0' }
+sp-io = {default-features = false, version = '3.0.0' }
+sp-runtime = {default-features = false, version = '3.0.0' }
+
+
+[features]
+default = [ "std" ]
+std = [
+	"sp-core/std",
+    "sp-io/std",
+	"sp-runtime/std",
+]
